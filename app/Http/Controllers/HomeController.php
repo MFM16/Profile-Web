@@ -32,6 +32,6 @@ class HomeController extends Controller
         $path = public_path('123.jpg');
         $file_name = 'Resume_Farhan.jpg';
         
-        return Response::download($path, $file_name, ['Content-Type: application/jpg']);
+        return Response::download($path, $file_name, ['Content-Type: application/pdf']);
     }
 }
